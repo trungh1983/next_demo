@@ -1,10 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import FooterYear from "./footer-year";
 
 export default function RootLayout({ children }) {
-  const currentYear = new Date().getFullYear();
-
   return (
     <html lang="en">
       <body>
@@ -32,17 +31,19 @@ export default function RootLayout({ children }) {
               <h2 className="footer-heading">Next Demo</h2>
               <p className="footer-copy">A simple website built with Next.js.</p>
             </div>
-            <address className="footer-section footer-copy not-italic">
+            <div className="footer-section">
               <h2 className="footer-heading">Liên hệ</h2>
-              <a className="footer-link" href="mailto:hello@example.com">
-                hello@example.com
-              </a>
               <Link className="footer-link" href="/lien-he">
                 Liên hệ
               </Link>
-            </address>
+              <address className="footer-copy not-italic">
+                <a className="footer-link" href="mailto:hello@example.com">
+                  hello@example.com
+                </a>
+              </address>
+            </div>
             <p className="footer-copy footer-section">
-              Copyright {currentYear} Next Demo. All rights reserved.
+              Copyright <FooterYear /> Next Demo. All rights reserved.
             </p>
           </div>
         </footer>
