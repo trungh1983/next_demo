@@ -3,6 +3,8 @@ import "./globals.css";
 import Link from "next/link";
 
 export default function RootLayout({ children }) {
+  const currentYear = new Date().getFullYear();
+
   return (
     <html lang="en">
       <body>
@@ -27,20 +29,20 @@ export default function RootLayout({ children }) {
         <footer>
           <div className="footer-content">
             <div className="footer-section">
-              <p className="footer-heading">Next Demo</p>
+              <h2 className="footer-heading">Next Demo</h2>
               <p className="footer-copy">A simple website built with Next.js.</p>
             </div>
             <address className="footer-section footer-copy not-italic">
-              <p className="footer-heading">Contact</p>
-              <a className="footer-link" href="mailto:hello@nextdemo.dev">
-                hello@nextdemo.dev
+              <h2 className="footer-heading">Liên hệ</h2>
+              <a className="footer-link" href="mailto:hello@example.com">
+                hello@example.com
               </a>
               <Link className="footer-link" href="/lien-he">
-                Contact page
+                Liên hệ
               </Link>
             </address>
             <p className="footer-copy footer-section">
-              Copyright 2026 Next Demo. All rights reserved.
+              Copyright {currentYear} Next Demo. All rights reserved.
             </p>
           </div>
         </footer>
