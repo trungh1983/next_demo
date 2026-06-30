@@ -8,12 +8,19 @@ export default function RootLayout({ children }) {
       <body>
         <header>
           <nav>
-            <Link className="nav-link" href="/">
-              Home
-            </Link>
-            <Link className="nav-link" href="/dashboard">
-              Dashboard
-            </Link>
+            <div>
+              <Link className="nav-link" href="/">
+                Home
+              </Link>
+              <Link className="nav-link" href="/dashboard">
+                Dashboard
+              </Link>
+            </div>
+            <div>
+              <Link className="nav-link" href="/lien-he">
+                Liên hệ
+              </Link>
+            </div>
           </nav>
         </header>
         <main> {children}</main>
