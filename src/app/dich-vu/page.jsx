@@ -81,6 +81,15 @@ export default function ServicesPage() {
             </article>
           ))}
         </div>
+
+        <div className="mt-6">
+          <Link
+            className="btn-primary inline-flex w-full items-center justify-center sm:w-auto"
+            href="/lien-he?source=services"
+          >
+            Nhận tư vấn ngay
+          </Link>
+        </div>
       </aside>
     </section>
   );
