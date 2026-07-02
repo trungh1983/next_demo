@@ -17,8 +17,9 @@ test("services page defines the required heading and navigation links", () => {
   assert.match(source, /href="\/"/);
   assert.match(
     source,
-    /<Link[^>]+href="\/lien-he\?source=services"[^>]*>\s*Nhận tư vấn ngay\s*<\/Link>/s,
+    /<Link[^>]+href="\/lien-he"[^>]*>\s*Nhận tư vấn ngay\s*<\/Link>/s,
   );
+  assert.doesNotMatch(source, /href="\/lien-he\?/);
 });
 
 test("services page lists the four required services", () => {
