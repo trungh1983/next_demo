@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <header>
-          <nav>
+          <nav aria-label="Main navigation">
             <div>
               <Link className="nav-link" href="/">
                 Home
@@ -20,6 +20,9 @@ export default function RootLayout({ children }) {
             <div>
               <Link className="nav-link" href="/lien-he">
                 Liên hệ
+              </Link>
+              <Link className="nav-link" href="/chinh-sach-bao-mat">
+                Chính sách bảo mật
               </Link>
             </div>
           </nav>
