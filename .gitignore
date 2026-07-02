@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# MyOffice / local agent artifacts
+.git-local-meta/
+.git-local-meta2/
+.gitconfig-local
+.chrome-headless-profile/
+.next-dev*.log
