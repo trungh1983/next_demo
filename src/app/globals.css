@@ -12,7 +12,10 @@
     @apply bg-slate-800 shadow-md;
   }
   nav {
-    @apply p-5 max-w-screen-lg mx-auto flex items-center justify-between *:space-x-6 *:flex *:items-center;
+    @apply mx-auto flex max-w-screen-lg flex-col gap-3 p-5 sm:flex-row sm:items-center sm:justify-between;
+  }
+  nav > div {
+    @apply flex flex-wrap items-center gap-2 sm:gap-6;
   }
   main {
     @apply w-full max-w-screen-lg flex-1 mx-auto p-5;
